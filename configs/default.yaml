@@ -1,0 +1,15 @@
+# Fixed before the tests were run.
+start: "1971-09-01"            # first month after the US closed the gold window (15 Aug 1971)
+inflation_bands: [0.025, 0.04] # same bands as the stock-bond correlation project
+horizons_years: [1, 5, 10, 20]
+hypotheses:
+  H1: "Gold beats US CPI inflation in most 10-year windows."
+  H2: "Gold moves one-for-one with inflation (annual beta near 1)."
+  H3: "Gold protects a portfolio when bought after a high-inflation year."
+sources:
+  monthly.csv: {url: "https://raw.githubusercontent.com/datasets/gold-prices/main/data/monthly.csv", licence: "ODC-PDDL-1.0", sha256: "f20720f3413b3dd114cd116951516f0fab577ff8c91e102a3a92549582ea9608"}
+  cpi.csv: {url: "https://raw.githubusercontent.com/datasets/cpi-us/main/data/cpiai.csv", licence: "ODC-PDDL-1.0", sha256: "4cc3a555b65d7d8470213e8e6a61f201b541beee16655692acb730119458f2e0"}
+  shiller.csv: {url: "https://raw.githubusercontent.com/datasets/s-and-p-500/main/data/data.csv", licence: "ODC-PDDL-1.0", sha256: "b797a3c8de4586af837b86a156b05f49be11ffab99e13171dae763b2a11bdf79"}
+  daily_treasury_yield.parquet: {url: "https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/main/data/US/daily_treasury_yield.parquet", licence: "ODC-BY", sha256: "34f65d005dd53c16e4cdabdbf22621dca95fa7e741dde184cb6ae67eea01bf2d"}
+  stock_prices.parquet: {url: "https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/main/data/US/stock_prices.parquet", licence: "ODC-BY", sha256: "4c522ec0dee02cb6554b5c3e4929d512327715c8f89670f9b1898b2403912f98"}
+  stock_dividend_events.parquet: {url: "https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/main/data/US/stock_dividend_events.parquet", licence: "ODC-BY", sha256: "9eb8265ac9d21997a8d9a31f7ee8e5099c42ca2508fe36a07929595b378d4b54"}

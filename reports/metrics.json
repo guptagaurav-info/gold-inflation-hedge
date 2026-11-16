@@ -1,0 +1,177 @@
+{
+ "sample": [
+  "1971-09-01",
+  "2026-09-01"
+ ],
+ "months": 661,
+ "gold_last": 4319.0,
+ "horizons": [
+  {
+   "years": 1,
+   "windows": 649,
+   "beat_inflation": 0.5469953775038521,
+   "median_real_ann": 0.026424620696249495,
+   "worst_real_ann": -0.42572174645323896,
+   "best_real_ann": 1.6104718978970116,
+   "corr_with_inflation": 0.2969353030076108,
+   "stocks_beat_inflation": 0.7349768875192604,
+   "bonds_beat_inflation": 0.5947611710323575,
+   "independent": 54
+  },
+  {
+   "years": 5,
+   "windows": 601,
+   "beat_inflation": 0.5524126455906821,
+   "median_real_ann": 0.02388517283713855,
+   "worst_real_ann": -0.19837140863650402,
+   "best_real_ann": 0.2492292723743449,
+   "corr_with_inflation": 0.45035302486067497,
+   "stocks_beat_inflation": 0.7670549084858569,
+   "bonds_beat_inflation": 0.7088186356073212,
+   "independent": 10
+  },
+  {
+   "years": 10,
+   "windows": 541,
+   "beat_inflation": 0.5693160813308688,
+   "median_real_ann": 0.014892177260481202,
+   "worst_real_ann": -0.09761398303557772,
+   "best_real_ann": 0.17618078766308753,
+   "corr_with_inflation": 0.2824411408670749,
+   "stocks_beat_inflation": 0.9057301293900185,
+   "bonds_beat_inflation": 0.8280961182994455,
+   "independent": 4
+  },
+  {
+   "years": 20,
+   "windows": 421,
+   "beat_inflation": 0.6318289786223278,
+   "median_real_ann": 0.024914262061107726,
+   "worst_real_ann": -0.07874239477887372,
+   "best_real_ann": 0.08897353256764855,
+   "corr_with_inflation": -0.19858611846676277,
+   "stocks_beat_inflation": 1.0,
+   "bonds_beat_inflation": 1.0,
+   "independent": 1
+  }
+ ],
+ "annual_beta": {
+  "years": 55,
+  "beta": 3.751326833695236,
+  "intercept": -3.2648814168077425,
+  "corr": 0.42745874598458883,
+  "t": 3.4422861286539512
+ },
+ "regimes": {
+  "same_year": [
+   {
+    "cpi_ret": "Below 2.5%",
+    "years": 18,
+    "gold_real": 0.035623503006748776,
+    "stock_real": 0.087978148257968,
+    "bond_real": 0.059211571950600214
+   },
+   {
+    "cpi_ret": "2.5% to 4%",
+    "years": 21,
+    "gold_real": 0.07621608717321937,
+    "stock_real": 0.13400318735450384,
+    "bond_real": 0.052234967245780334
+   },
+   {
+    "cpi_ret": "Above 4%",
+    "years": 16,
+    "gold_real": 0.09830953710455723,
+    "stock_real": 0.007608130190728035,
+    "bond_real": -0.03718488586331402
+   }
+  ],
+  "prior_year": [
+   {
+    "cpi_ret": "Below 2.5%",
+    "years": 18,
+    "gold_real": 0.0814557351456639,
+    "stock_real": 0.12041662148304035,
+    "bond_real": 0.007598107368274838
+   },
+   {
+    "cpi_ret": "2.5% to 4%",
+    "years": 20,
+    "gold_real": 0.07766005575209992,
+    "stock_real": 0.10188668360675353,
+    "bond_real": 0.05890965771624858
+   },
+   {
+    "cpi_ret": "Above 4%",
+    "years": 16,
+    "gold_real": 0.0501630250525653,
+    "stock_real": 0.018188673603144405,
+    "bond_real": 0.011918442465335508
+   }
+  ]
+ },
+ "valuation": {
+  "real_price_now": 4319.0,
+  "ratio_now": 3.145266006742827,
+  "ratio_exp_now": 3.145266006742827,
+  "max_ratio_before": 3.769366377852401,
+  "corr_full": -0.6036537068941611,
+  "corr_exp": -0.46989225516030964,
+  "independent": 4
+ },
+ "valuation_quintiles": [
+  {
+   "ratio_full": "Cheapest 20%",
+   "months": 109,
+   "ratio_mid": 0.42643944889976304,
+   "fwd_real_ann": 0.11329653226159776
+  },
+  {
+   "ratio_full": "2",
+   "months": 108,
+   "ratio_mid": 0.5965443248172061,
+   "fwd_real_ann": 0.019278844207908548
+  },
+  {
+   "ratio_full": "3",
+   "months": 108,
+   "ratio_mid": 0.7297155418873764,
+   "fwd_real_ann": -0.01592202479630879
+  },
+  {
+   "ratio_full": "4",
+   "months": 108,
+   "ratio_mid": 0.9413931987932256,
+   "fwd_real_ann": -0.03614544365240356
+  },
+  {
+   "ratio_full": "Dearest 20%",
+   "months": 108,
+   "ratio_mid": 1.3836047931200435,
+   "fwd_real_ann": 0.007805376152873789
+  }
+ ],
+ "drawdown": {
+  "max_real_dd": -0.8305969055545088,
+  "peak": "1980-01-01",
+  "trough": "2001-04-01",
+  "recovered": "2025-02-01",
+  "years_under": 45.086926762491444
+ },
+ "vol": {
+  "gold": 0.17186474595477683,
+  "stock": 0.12643306895757064,
+  "bond": 0.06996346207195459
+ },
+ "real_cagr": {
+  "gold": 0.04640024751270433,
+  "stock": 0.06963910163907161,
+  "bond": 0.022182472784042284
+ },
+ "rp_peak": [
+  "2026-02-01",
+  5175.998898358248
+ ],
+ "rp_1980": 2923.322622107968,
+ "rp_mean": 1373.1747937188522
+}

@@ -1,0 +1,9 @@
+flowchart LR
+  A["Monthly gold price 1833-2026<br/>BLS CPI, Shiller S&P 500,<br/>Treasury yields, SPY"]:::src --> B["Free-market sample<br/>Sep 1971 - Sep 2026<br/>real returns"]:::code
+  B --> C["Rolling 1, 5, 10, 20-year windows<br/>did gold beat inflation?"]:::check
+  B --> D["Calendar years by inflation band<br/>same year vs year before"]:::check
+  B --> E["Annual beta to inflation"]:::check
+  B --> F["Real price vs its average<br/>and the next 10 years"]:::check
+  classDef src fill:#DCE6F2,stroke:#1F3A5F,color:#222
+  classDef code fill:#E6E1F2,stroke:#5B4B8A,color:#222
+  classDef check fill:#F6DDD8,stroke:#B5473A,color:#222
